@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+	--Red: hsl(0, 100%, 74%); 
+	--Green: hsl(154, 59%, 51%);
+	--Blue: hsl(248, 32%, 49%);
+	--Dark-Blue: hsl(249, 10%, 26%);
+	--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url('./images/bg-intro-mobile.png');
+	background-color: var(--Red);
+}
+
+#intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.leftBox {
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+.leftBox h1 {
+	padding: 1.4rem;
+	margin-bottom: 1.4rem;
+	font-size: 2rem;
+	line-height: 2.4rem;
+}
+
+.leftBox p {
+	padding: 15px;
+	line-height: 1.7rem;
+}
+
+.freeDays {
+	background-color: var(--Blue);
+	padding: 1rem 6rem;
+	border-radius: 10px;
+	
+}
+
+.freeDays a {
+	color: white;
+	text-decoration: none;
+}
+
+label {
+	display: none;
+}
+
+.formContainer {
+	background-color: white;
+	padding: 25px;
+	border-radius: 15px;
+
+}
+
+.errorIcon, .errorTxt {
+	display: none;
+}
+
+.field.error .errorTxt,
+.field.error .errorIcon {
+	display: block;
+}
+
+@media only screen and (min-width: 750px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
