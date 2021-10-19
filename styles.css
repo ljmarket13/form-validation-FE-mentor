@@ -29,8 +29,6 @@ body {
 	width: 100%;
 }
 
-
-
 .container {
 	display: flex;
 	justify-content: center;
@@ -59,15 +57,13 @@ body {
 
 .freeDays {
 	background-color: var(--Blue);
-	padding: 1rem 6rem;
+	padding: 1rem 5rem;
 	border-radius: 10px;
 	margin-bottom: 20px;
 	box-shadow: 5px 5px rgba(131, 129, 129, 0.534);
-}
-
-.freeDays a {
 	color: white;
-	text-decoration: none;
+	font-size: 0.9rem;
+	text-align: center;
 }
 
 .formContainer {
@@ -101,6 +97,12 @@ body {
 	font-weight: 600;
 	box-shadow: 4px 4px rgba(131, 129, 129, 0.534);
 	text-transform: uppercase;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(33, 143, 69);
 }
 
 .errorTxt {
@@ -108,7 +110,7 @@ body {
 	color: var(--Red);
 }
 
-.errorIcon, .errorTxt {
+.hidden {
 	display: none;
 }
 
@@ -122,7 +124,6 @@ body {
 	text-align: center;
 	padding: 10px;
 	color: var(--Grayish-Blue);
-	
 }
 
 span {
@@ -130,12 +131,25 @@ span {
 	font-weight: 600;
 }
 
+.submitTxt {
+	font-size: 2.5rem;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+}
+
 @media only screen and (min-width: 750px) {
+
+	body {
+		background-image: url('./images/bg-intro-desktop.png');
+	}
+
 	.container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		padding: 5rem;
 	}
 }
 
